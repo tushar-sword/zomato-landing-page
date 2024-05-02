@@ -356,3 +356,151 @@ the size of the webpage*/
     font-weight: 400;
     color: grey;
 }
+
+.right .download__app_container div{
+    display: flex;
+    gap: 1rem;
+}
+
+.right .download__app_container div img{
+    width: 35%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1300px){
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .rigth{
+        flex: 1;
+    }
+
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .get__the_app {
+        padding: 2rem 0;
+    }
+    .get__the_app .semiContainer {
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+.footer{
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer_section{
+    width: 130px;
+}
+
+.section1_buttonContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1_buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px grey;
+    border-radius: 5px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.navigation_container{
+    display: grid;
+    grid-template-columns:repeat(5 , 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link_container{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: grey;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.footer__link:hover{
+    color: black;
+}
+
+.section__link_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.section__link_container button i{
+    /* color: white; */
+    font-size: 13px;
+    display: flex;
+    /* horizontal */
+    align-items: center;
+    /* vertical y axis */
+    justify-content: center;
+}
+
+.footer__section_logos{
+    width: 100%;
+}
+
+.disclamer{
+    width: 95%;
+    color: grey;
+    margin: auto;
+    border-top: 1px solid grey;
+    padding: top 1.5rem;
+}
+
+@media only screen and(max-width: 900px)
+{
+    .navigation_container{
+        grid-template-columns: repear(3,1fr);
+    }
+}
+
+@media only screen and(max-width: 500px)
+{
+    .navigation_container{
+        grid-template-columns: repear(2,1fr);
+    }
+}
+
+@media only screen and(max-width: 320px)
+{
+    .navigation_container{
+        grid-template-columns: repear(1,1fr);
+    }
+}
+
